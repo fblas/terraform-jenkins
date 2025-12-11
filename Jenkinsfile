@@ -12,7 +12,7 @@ pipeline {
     environment {
         AWS_ACCESS_KEY_ID     = credentials('aws-access-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
-        AWS_DEFAULT_REGION    = 'us-east-1'
+        AWS_DEFAULT_REGION    = 'us-east-2'
     }
   
     stages {
@@ -22,7 +22,7 @@ pipeline {
              script{
                     dir("terraform")
                         {
-                           git branch: 'main', url: 'https://github.com/cristhiancaldas/terraform-jenkins.git'
+                           git branch: 'main', url: 'https://github.com/fblas/terraform-jenkins.git'
                         }
                     }
             }
