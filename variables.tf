@@ -7,11 +7,11 @@ variable "instance_name" {
 variable "ami" {
   description = "Amazon machine image to use for ec2 instance"
   type        = string
-  default     = "ami-05c13eab67c5d8861" # amazon Linux
+  default     = "ami-0f5fcdfbd140e4ab7" # amazon Linux
 }
 
 variable "instance_type" {
   description = "ec2 instance type"
   type        = string
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
